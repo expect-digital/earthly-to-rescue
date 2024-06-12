@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "go.buildTags": "integration",
+  "go.formatTool": "gofumpt",
+  "go.testTags": "integration"
+}

@@ -1,0 +1,22 @@
+name: counter
+services:
+  inc:
+    image: counter/counter:latest
+    container_name: counter
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - REDIS_ADDR=redis:6379
+    networks:
+      - counter
+  redis:
+    image: redis:7.0.15-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - 6379:6379
+    networks:
+      - counter
+networks:
+  counter:
