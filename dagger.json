@@ -1,0 +1,6 @@
+{
+  "name": "dagger-to-rescue",
+  "sdk": "go",
+  "source": "dagger",
+  "engineVersion": "v0.11.7"
+}

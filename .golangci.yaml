@@ -1,3 +1,6 @@
+issues:
+  exclude-dirs:
+    - dagger/internal
 linters:
   enable-all: true
   disable:
@@ -6,3 +9,4 @@ linters:
     - exhaustruct
     - gomnd
     - varnamelen
+    - wrapcheck
